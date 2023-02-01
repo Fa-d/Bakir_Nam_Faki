@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "27901989837",
+    "project_id": "biddyanondo-166cb",
+    "storage_bucket": "biddyanondo-166cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27901989837:android:0fa3282169c535141baa84",
+        "android_client_info": {
+          "package_name": "com.kolpolok.nord"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27901989837-61d0cnmqhpsb9dibvu90em3f4ns6c9kh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7UFmwzuGao32CBB2IqNlAiXT2Pqw373I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27901989837-61d0cnmqhpsb9dibvu90em3f4ns6c9kh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
