@@ -2,6 +2,7 @@ package com.kolpolok.nord.dashboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
@@ -16,6 +17,7 @@ class DashBoardActivity : AppCompatActivity() {
         binding = ActivityDashBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initView()
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         supportActionBar?.hide()
     }
 

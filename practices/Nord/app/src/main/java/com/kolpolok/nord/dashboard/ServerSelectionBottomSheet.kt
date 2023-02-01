@@ -8,7 +8,6 @@ import android.widget.FrameLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.kolpolok.nord.R
 import com.kolpolok.nord.databinding.FragmentBottomsheetServersSelectionBinding
 
 class ServerSelectionBottomSheet : BottomSheetDialogFragment() {
@@ -25,11 +24,6 @@ class ServerSelectionBottomSheet : BottomSheetDialogFragment() {
         bottomSheetHeightAlign()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-       // setStyle(STYLE_NORMAL, R.style.BottomSheet1)
-    }
-
 
     private fun bottomSheetHeightAlign() {
         val dialog: BottomSheetDialog? = dialog as BottomSheetDialog?
@@ -39,12 +33,14 @@ class ServerSelectionBottomSheet : BottomSheetDialogFragment() {
         if (bottomSheet != null) {
             BottomSheetBehavior.from(bottomSheet).state = BottomSheetBehavior.STATE_COLLAPSED
             with(BottomSheetBehavior.from(bottomSheet)) {
-                this.maxHeight = (getDeviceMetrics(requireContext())?.heightPixels?.times(0.75))?.toInt() ?: 0
+                this.maxHeight =
+                    (getDeviceMetrics(requireContext())?.heightPixels?.times(0.75))?.toInt() ?: 0
                 skipCollapsed = true
                 isHideable = true
             }
         }
     }
+
     private fun getDeviceMetrics(context: Context): DisplayMetrics? {
         val metrics = DisplayMetrics()
         val wm = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
